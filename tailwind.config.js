@@ -1,8 +1,10 @@
 module.exports = {
   purge: [
     './index.md',
-    './posts/*.md',
-    './.vitepress/**/*.{vue,js,ts,jsx,tsx}',
+    './docs/posts/*.md',
+    './docs/daily/*.md',
+    './docs/.vitepress/*.{vue,js,ts,jsx,tsx}',
+    './docs/.vitepress/**/*.{vue,js,ts,jsx,tsx}',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
