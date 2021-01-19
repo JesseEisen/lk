@@ -80,4 +80,26 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 :deep(.header-anchor) {
   display: none;
 }
+
+:deep(q) {
+  font-family: serif;
+  font-size: 18px;
+  font-style: italic;
+  display: block;
+  max-width: 400px;
+  color: #000;
+}
+
+:deep(q::before) {
+  content: open-quote;
+}
+
+:deep(q::after) {
+  content: close-quote;
+}
+
+:deep(h5) {
+  color: #000;
+  font-size: 0.83em;
+}
 </style>
