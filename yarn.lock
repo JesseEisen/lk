@@ -380,6 +380,13 @@ array-union@^2.1.0:
   resolved "https://registry.npm.taobao.org/array-union/download/array-union-2.1.0.tgz#b798420adbeb1de828d84acd8a2e23d3efe85e8d"
   integrity sha1-t5hCCtvrHego2ErNii4j0+/oXo0=
 
+ascii2mathml@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.npm.taobao.org/ascii2mathml/download/ascii2mathml-0.6.2.tgz#e9d85058d3c06655a6100c0f0291a90dca7fcaa1"
+  integrity sha1-6dhQWNPAZlWmEAwPApGpDcp/yqE=
+  dependencies:
+    minimist "^1.2.0"
+
 at-least-node@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/at-least-node/download/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
@@ -1073,6 +1080,18 @@ markdown-it-emoji@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npm.taobao.org/markdown-it-emoji/download/markdown-it-emoji-1.4.0.tgz#9bee0e9a990a963ba96df6980c4fddb05dfb4dcc"
   integrity sha1-m+4OmpkKljupbfaYDE/dsF37Tcw=
+
+markdown-it-math@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npm.taobao.org/markdown-it-math/download/markdown-it-math-4.1.1.tgz#a63fac36d9ffe4362749749d966a84852f2ca137"
+  integrity sha1-pj+sNtn/5DYnSXSdlmqEhS8soTc=
+  optionalDependencies:
+    ascii2mathml "^0.6.2"
+
+markdown-it-mathjax@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/markdown-it-mathjax/download/markdown-it-mathjax-2.0.0.tgz#ae2b4f4c5c719a03f9e475c664f7b2685231d9e9"
+  integrity sha1-ritPTFxxmgP55HXGZPeyaFIx2ek=
 
 markdown-it-table-of-contents@^0.4.4:
   version "0.4.4"

@@ -36,6 +36,15 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
   font-size: 14px;
 }
 
+:deep(.releated) {
+  color: #000;
+}
+
+:deep(a:hover) {
+  color: #fff;
+  background-color: #000;
+}
+
 :deep(.table-of-contents > ul) {
   columns: 2;
   line-height: 20px;

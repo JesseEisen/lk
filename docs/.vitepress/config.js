@@ -15,5 +15,8 @@ module.exports = {
     toc: {
       includeLevel: [2],
     },
+    config: (md) => {
+      md.use(require('markdown-it-math'))
+    },
   },
 }

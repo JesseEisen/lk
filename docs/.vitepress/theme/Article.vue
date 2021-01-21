@@ -9,6 +9,10 @@
 
     <Content class="prose max-w-none pt-10 pb-8" />
   </article>
+
+  <footer class="text-right my-12">
+    <p class="author-show">{{ data.author }}</p>
+  </footer>
 </template>
 
 <script setup>
@@ -29,3 +33,18 @@ const date = computed(() => posts[findCurrentIndex()].date)
 const nextPost = computed(() => posts[findCurrentIndex() - 1])
 const prevPost = computed(() => posts[findCurrentIndex() + 1])
 </script>
+
+<style scoped>
+:deep(a:hover) {
+  color: #fff;
+  background-color: #000;
+}
+
+:deep(.author-show::before) {
+  content: '- ';
+}
+
+:deep(.author-show::after) {
+  content: '.';
+}
+</style>
