@@ -13,7 +13,7 @@ author: Chan
 
 虽然在此之前也或多或少的注意这方面的积累，也会针对特定的知识进行笔记记录，最终通过 Github Pages 发布这些内容。在日常工作中也起到了一些作用，关键时刻打开浏览器输入网址也能快速找到以前积累的内容。
 
-![jesse pages](/github-pages.png)
+![jesse pages](/images/github-pages.png)
 <h6 style="text-align:center">github pages notes page</h6>
 
 但是这些内容有些只算是Draft Notes，有些经过整理检查过能够称为Literature Notes。很多时候只是草草的记录一下当时遇到的问题和知识点，但更多的是在问题解决之后觉得这个事儿在当时的我的脑海里非常清晰，且觉得这个事儿不值得记录，或者可以稍晚一些记录。正是这种想法很多踩过的坑在下一次遇到之后仍然会再去踩一次且重复之前搜索操作。

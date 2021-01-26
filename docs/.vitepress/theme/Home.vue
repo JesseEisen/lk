@@ -29,7 +29,7 @@
           <li class="py-1" v-for="{ title, href, date, excerpt } of $site.customData.posts">
             <article class="spance-y-2 flex xl:space-y-0 xl:items-baseline">
               <!-- <article class="spance-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline"> -->
-              <Date :date="date" />
+              <Date class="w-32" :date="date" />
               <div class="space-y-5 mx-5">
                 <div class="space-y-6">
                   <p class="text-base leading-8 tracking-tight">

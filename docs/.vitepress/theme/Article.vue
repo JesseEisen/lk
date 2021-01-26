@@ -40,6 +40,10 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
   background-color: #000;
 }
 
+:deep(.releated) {
+  color: #000;
+}
+
 :deep(.author-show::before) {
   content: '- ';
 }
