@@ -6,6 +6,10 @@
 
     <Content class="prose max-w-none pt-10 pb-8" />
   </article>
+
+  <footer class="text-right my-12">
+    <p class="author-show">L.K</p>
+  </footer>
 </template>
 
 <script setup>
@@ -110,5 +114,13 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 :deep(h5) {
   color: #000;
   font-size: 0.83em;
+}
+
+:deep(.author-show::before) {
+  content: '- ';
+}
+
+:deep(.author-show::after) {
+  content: '.';
 }
 </style>

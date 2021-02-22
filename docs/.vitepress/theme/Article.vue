@@ -51,4 +51,17 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 :deep(.author-show::after) {
   content: '.';
 }
+
+:deep(code) {
+  font-family: monospace;
+}
+
+:deep(pre) {
+  overflow: auto;
+  background: #efefef;
+  padding: 10px;
+  font-size: 80%;
+  margin-bottom: 30px;
+  color: #000;
+}
 </style>
