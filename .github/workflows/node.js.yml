@@ -36,3 +36,5 @@ jobs:
           echo github.event.issue.number = ${{ github.event.issue.number }}
     - run: |
           curl -v https://ht-3.drugflow.cloud
+          echo "$SUPER_SECRET" | tr -d '\r' | ssh-add - > /dev/null
+          scp index.md lkchen@39.104.176.219:/home/lkchen/
