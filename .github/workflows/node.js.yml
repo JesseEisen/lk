@@ -40,4 +40,4 @@ jobs:
         username: "lkchen"
         key: ${{ secrets.SSH_PRIKEY }}
         source: "index.md"
-        target: "/home/lkchen/"
+        target: "/data/home/lkchen/"
