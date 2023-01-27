@@ -18,8 +18,7 @@ jobs:
       matrix:
         node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-    env: 
-      SUPER_SECRET: ${{ secrets.SSH_PRIKEY }}
+        
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -34,6 +33,11 @@ jobs:
           echo github.event.number = ${{ github.event.number  }}
           echo github.event.pull_request.number = ${{ github.event.pull_request.number }}
           echo github.event.issue.number = ${{ github.event.issue.number }}
-    - run: |
-          echo "$SUPER_SECRET" | tr -d '\r' | ssh-add - > /dev/null
-          scp index.md lkchen@ht-3.drugflow.cloud:/home/lkchen/
+    - name: SCP Files
+      uses: appleboy/scp-action@v0.0.1
+      with:
+        host: "ht-3.drugflow.cloud"
+        username: "lkchen"
+        key: ${{ secrets.SSH_PRIKEY }}
+        source: "index.md"
+        target: "/home/lkchen/"
