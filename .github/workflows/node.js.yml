@@ -35,6 +35,5 @@ jobs:
           echo github.event.pull_request.number = ${{ github.event.pull_request.number }}
           echo github.event.issue.number = ${{ github.event.issue.number }}
     - run: |
-          curl -v https://dev-3.carbonsilico.com
           echo "$SUPER_SECRET" | tr -d '\r' | ssh-add - > /dev/null
-          scp index.md lkchen@39.104.176.219:/home/lkchen/
+          scp index.md lkchen@ht-3.drugflow.cloud:/home/lkchen/
