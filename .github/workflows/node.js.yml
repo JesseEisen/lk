@@ -34,7 +34,7 @@ jobs:
           echo github.event.pull_request.number = ${{ github.event.pull_request.number }}
           echo github.event.issue.number = ${{ github.event.issue.number }}
     - name: SCP Files
-      uses: actions/checkout@master
+      uses: appleboy/scp-action@master
       with:
         host: "ht-3.drugflow.cloud"
         username: "lkchen"
